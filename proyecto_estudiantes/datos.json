@@ -1,0 +1,105 @@
+[
+    {
+        "model": "colegio_app.estudiante",
+        "pk": 1,
+        "fields": {
+            "rut": "111111111",
+            "nombre": "Ignacio",
+            "apellido": "Montero",
+            "fecha_nacimiento": "2015-01-02",
+            "activo": true,
+            "creado_por": "Maria Caña"
+        }
+    },
+    {
+        "model": "colegio_app.estudiante",
+        "pk": 2,
+        "fields": {
+            "rut": "222222222",
+            "nombre": "Carolina",
+            "apellido": "Mena",
+            "fecha_nacimiento": "2018-03-02",
+            "activo": true,
+            "creado_por": "Maria Caña"
+        }
+    },
+    {
+        "model": "colegio_app.profesor",
+        "pk": 1,
+        "fields": {
+            "rut": "123456789",
+            "nombre": "Luciano",
+            "apellido": "Ortega",
+            "activo": true,
+            "creado_por": "Mario Valenzuela"
+        }
+    },
+    {
+        "model": "colegio_app.profesor",
+        "pk": 2,
+        "fields": {
+            "rut": "112233445",
+            "nombre": "Carmen",
+            "apellido": "Lopez",
+            "activo": true,
+            "creado_por": "Orlando Perez"
+        }
+    },
+    {
+        "model": "colegio_app.direccion",
+        "pk": 1,
+        "fields": {
+            "calle": "San simon",
+            "numero": "1010",
+            "departamento": "10",
+            "comuna": "San Miguel",
+            "ciudad": "Santiago",
+            "region": "Metropolitana",
+            "estudiante": "111111111"
+        }
+    },
+    {
+        "model": "colegio_app.direccion",
+        "pk": 2,
+        "fields": {
+            "calle": "Plaza",
+            "numero": "1234",
+            "departamento": "44",
+            "comuna": "San Ramon",
+            "ciudad": "Santiago",
+            "region": "Metropolitana",
+            "estudiante": "222222222"
+        }
+    },
+    {
+        "model": "colegio_app.curso",
+        "pk": 1,
+        "fields": {
+            "codigo": "2525",
+            "nombre": "Primero",
+            "version": 12,
+            "profesor": ["123456789"]  
+        }
+    },
+    {
+        "model": "colegio_app.curso",
+        "pk": 2,
+        "fields": {
+            "codigo": "2524",
+            "nombre": "Segundo",
+            "version": 10,
+            "profesor": ["112233445"]  
+        }
+    },
+
+    {
+        "model": "colegio_app.curso",
+        "pk": 3,
+        "fields": {
+            "codigo": "2526",
+            "nombre": "Tercero",
+            "version": 11,
+            "profesor": ["112233445", "123456789"]  
+        }
+    }
+]
